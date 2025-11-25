@@ -2,7 +2,7 @@ print("Frist line", end=",") # Line 1
 print("Second Line") # Line 2
 
 output
-	Frist line,Second Line
+	<code style="color : aqua> Frist line,Second Line </code>
 	
 *****-----*****-----*****-----*****-----*****-----*****-----*****
 Gereftan input az user:
@@ -257,5 +257,6 @@ print(list(d.keys())) #['a', 'b', 'c']
 print('(7) delete') #(7) delete
 del d["c"]
 print(d)
+
 
 
