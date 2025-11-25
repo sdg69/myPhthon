@@ -5,7 +5,7 @@ output
 	<code style="color : aqua> Frist line,Second Line </code>
 	
 *****-----*****-----*****-----*****-----*****-----*****-----*****
-Gereftan input az user:
+<strong>Gereftan input az user:</strong>
 
 x = input("Enter Your F**** Name: ")
 print("Your name is:", x)
@@ -257,6 +257,7 @@ print(list(d.keys())) #['a', 'b', 'c']
 print('(7) delete') #(7) delete
 del d["c"]
 print(d)
+
 
 
 
