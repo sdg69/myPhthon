@@ -1,0 +1,259 @@
+print("Frist line", end=",") # Line 1
+print("Second Line") # Line 2
+
+output
+	Frist line,Second Line
+	
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+Gereftan input az user:
+
+x = input("Enter Your F**** Name: ")
+print("Your name is:", x)
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+x, y = 5, 4
+print("//: ", x//y)
+
+output
+	1
+	
+x, y = 100, 30
+print("//: ", x//y)
+
+output
+	3
+	
+x, y = 100, 10
+print("//: ", x//y)
+
+output
+	10
+    
+x=100//20   output=5
+x=100/20    output=5.0
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+x, y = 4, 4
+z = x==y
+print(z)
+
+output
+	True
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+walrus:
+
+walrus:= 
+		assign, retun
+		
+--- --- --- --- --- --- --- --- --- --- --- example 1
+
+name = 'amir'
+print(name)    # output: amir
+
+print(name := 'amir')
+
+--- --- --- --- --- --- --- --- --- --- --- example 2
+
+name = 'amirali'
+
+if(x:= len(name)) > 4: print('Error!!!')
+
+--- --- --- --- --- --- --- --- --- --- --- example 4
+
+inputs = list()
+while (current := input("Write something: ")) != "quit":
+    inputs.append(current)
+	
+output:
+	Write something: k
+	Write something: 5
+	Write something: 5
+	Write something: 54
+	Write something: quit
+
+--- --- --- --- --- --- --- --- --- --- --- example 5
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+    % symbol called modulus operator
+    
+*****-----*****-----*****-----*****-----*****-----*****-----*****    
+
+S = "Hello World!" # رشته
+L = [1,2,3,4,5,6,'r'] # لیست
+
+print('h' not in S, "___", 'W' not in S, 'r' in L)
+print('h' in S, "___", 'W' in S, 'r' in L)
+
+output:
+    True ___ False True
+    False ___ True True
+
+*****-----*****-----*****-----*****-----*****-----*****-----***** 
+
+>>> 5 in range(10)
+True
+
+>>> 5 not in range(10)
+False
+
+>>> 5 in range(0, 10, 2)
+False
+
+>>> 5 not in range(0, 10, 2)
+True
+
+*****-----*****-----*****-----*****-----*****-----*****-----***** 
+
+x3, y3 = [1 ,2 ,4], [1 ,2 ,4]
+print(x3 is y3)
+output: False
+
+
+x3, y3 = (1 ,2 ,4), (1 ,2 ,4)
+print(x3 is y3)
+output: True
+
+*****-----*****-----*****-----*****-----*****-----*****-----***** 
+
+# Walrus
+
+foods = []
+while True:
+    f = input("What food do you like?: ")
+    if f == "quit":
+        break
+    foods.append(f)
+
+*****-----*****-----*****-----*****-----*****-----*****-----***** 
+
+# باگ اعداد اعشاری با تابع رند کردن
+print(0.1 + 0.2 == 0.3)  #باگ 
+print(round(0.1 + 0.2, 3) == 0.3)  #بدون باگ
+
+# هر چند این روش مشروط به این است که از نتیجه مطمئن باشیم و گرنه روش کاملی نیست
+False
+True
+
+*****-----*****-----*****-----*****-----*****-----*****-----***** 
+
+# باگ اعداد اعشاری با تابع رند کردن
+print(0.1 + 0.2 == 0.3)  #باگ
+print(round(0.1 + 0.2, 3) == 0.3)  #بدون باگ
+
+
+*****-----*****-----*****-----*****-----*****-----*****-----***** 
+
+x = 2.36
+print("int?", isinstance(x, int))
+print("str?", isinstance(x, str))
+print("float?", isinstance(x, float))
+
+
+
+*****-----*****-----*****-----*****-----*****-----*****-----***** 
+
+s3 = "C:\Windows32\\new"  # لازم هست برای درنظر نگرفتن دستور قبل آن یک \ گذاشت
+print(s3)
+s4 = r"C:\Windows32\new\tablet"  # گذاشتن آر قبل رشته کل دستورات آن را لغو می کند
+
+
+*****-----*****-----*****-----*****-----*****-----*****-----***** 
+
+# می توان متغیر های رشته ای را ضرب و جمع کرد
+x = "reza "
+print(4 * x + "Dolati")
+reza reza reza reza Dolati
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+s = "Hello World!"
+print(s.isalnum())
+
+str = input("enter your msg for delete its space")
+print(str.replace(" " , "").replace("\t" , ""))
+
+output: 
+enter your msg for delete its space sa de   gh  kare    v an
+sadeghkarevan
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+s = "Hello"
+L = list(s)
+print(L,type(L), sep="\n")
+
+#['H', 'e', 'l', 'l', 'o']
+#<class 'list'>
+
+s2 = "W o r l d !"
+ch = s2.split(" ")
+print(ch,type(ch), sep="\n")
+
+#['W', 'o', 'r', 'l', 'd', '!']
+#<class 'list'>
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+d = {'a': 80, 'b': 20, 'c': (1,2,3)}
+print('(1)')
+print(d.get('b'))
+print('(2)')
+print(d.get('c'))
+print('(3)')
+print(d.keys())
+print('(4)')
+print(d.values())
+print('(5)')
+print(d.items())
+print('(6)')
+print(list(d.keys()))
+print('(7) delete')
+del d["c"]
+print(d)
+
+(1)
+20
+(2)
+(1, 2, 3)
+(3)
+dict_keys(['a', 'b', 'c'])
+(4)
+dict_values([80, 20, (1, 2, 3)])
+(5)
+dict_items([('a', 80), ('b', 20), ('c', (1, 2, 3))])
+(6)
+['a', 'b', 'c']
+(7) delete
+{'a': 80, 'b': 20}
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+# استفاده از کامپرینهنشن (درک) برای تعریف دیکشنری
+
+d = {x: x**2 for x in range (10)}
+print(d)
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+d = {'a': 80, 'b': 20, 'c': (1,2,3)}
+print('(1)')
+print(d.get('b')) #20
+
+print('(2)')
+print(d.get('c')) #(1, 2, 3)
+
+print('(3)')
+print(d.keys()) #dict_keys(['a', 'b', 'c'])
+
+print('(4)')
+print(d.values())   #dict_values([80, 20, (1, 2, 3)])
+
+print('(5)')
+print(d.items())    #dict_items([('a', 80), ('b', 20), ('c', (1, 2, 3))])
+
+print('(6)')
+print(list(d.keys())) #['a', 'b', 'c']
+
+print('(7) delete') #(7) delete
+del d["c"]
+print(d)

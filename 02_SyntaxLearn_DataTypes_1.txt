@@ -1,0 +1,151 @@
+print(0.1+0.2) # 0.3000000000000004 # 0.16s
+print(0.3+0.6) # 0.8999999999999999 # 0.16s
+
+now what to do:
+
+
+from decimal import Decimal # using decimal method.
+x=Decimal('0.1') + Decimal('0.2')
+
+print(x==Decimal('0.3')) #True
+print(type(x)) # class 'decimal.Decimal'
+
+y=float(x)
+print(y,type(y), sep=' | ') #0.3 ! <class 'float'>
+print(y==0.3)   #True
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+x=1
+y=complex(x) # adad e mokhtalet
+print(y, type)
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+import fractions
+print(fractions.Fraction(1.5)) #3/2
+print(fractions.Fraction(0.75))#3/4
+print(fractions.Fraction(0.9)) #8106479329266893/9007199254740992
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+import fractions
+
+print(fractions.Fraction(0.1)) #3602879701896397/36028797018963968
+print(fractions.Fraction(0.2)) #...
+print(fractions.Fraction(0.3)) #...
+print(fractions.Fraction(0.4)) #...
+print(fractions.Fraction(0.5)) #1/2
+print(fractions.Fraction(0.6)) #...
+print(fractions.Fraction(0.7)) #...
+print(fractions.Fraction(0.8)) #...
+print(fractions.Fraction(0.9)) #... 
+print(fractions.Fraction(0.10))#3602879701896397/36028797018963968
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+# Complex Numbers (x and / and - are supported)
+
+c= 1+3j
+
+print(c, type(c), sep = ' | ')
+(1+3j) | <class 'complex'>
+print(c.real) ############################قسمت حقیقی
+1.0
+print(c.imag) ############################قسمت مجازی
+3.0
+print(c.conjugate()) ##################### مزدوج
+(1-3j)
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+# باگ اعداد اعشاری با تابع رند کردن
+
+
+print(0.1 + 0.2 == 0.3)  #باگ
+print(round(0.1 + 0.2, 3) == 0.3)  #بدون باگ
+
+
+# هر چند این روش مشروط به این است که از نتیجه مطمئن باشیم و گرنه روش کاملی نیست
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+print(s2)
+s3 = "C:\Windows32\\new"  # لازم هست برای درنظر نگرفتن دستور قبل آن یک \ گذاشت
+C:\Windows32\new
+print(s3)
+s4 = r"C:\Windows32\new\tablet"  # گذاشتن آر قبل رشته کل دستورات آن را لغو می کند
+C:\Windows32\new\tablet
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+x= 'sdg '
+print(4 * x + 'Karevan')
+
+sdg sdg sdg sdg Karevan
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+# Variables and Strings
+
+s = "HellowPord"
+print(s[-4])
+P
+
+s = 'Hello World'
+first_five_chars = s[:5]
+print(first_five_chars)
+Hello
+
+third_to_fifth_chars = s[2:5]
+print(third_to_fifth_chars)
+llo
+
+s = 'Hello World'
+all_characters_minus_1st_two = s[2:]
+print(third_to_fifth_chars)
+llo World
+
+# REVERSE 
+s = "Hello World!"
+print(s[::-1])
+output: !dlroW olleH
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+s = "Hello World Baby!"
+l = ('A', 'B', 'C')
+print(s.join(l)) 
+
+output: AHello World! BabyBHello World! BabyC
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+#جوین کردن رشته در لیست
+
+s = "Hello World! Baby"
+print(s.split(' ')) 
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+s="Programing is Good! Let's beging"
+
+print(s.split(' '))  # جدا کردن رشته در یک لیست با اسفتاده از رشته مشخص
+
+output: ['Programing', 'is', 'Good!', "Let's", 'beging']
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+s = "Hello World!
+print(s.split(' '))  # جدا کردن رشته در یک لیست با اسفتاده از رشته مشخص
+
+output: ['Hello', 'World']
+
+*****-----*****-----*****-----*****-----*****-----*****-----*****
+
+str = input("Enter your msg for delete its space")
+
+print(str.replace(" " , "").replace("\t" , ""))
+
+output : 
+Enter your msg for delete its spacesadegh karevan august 12 (  ) [    } .
+
+realoutpt: 
+sadeghkarevanaugust12()[}.
+*****-----*****-----*****-----*****-----*****-----*****-----*****
